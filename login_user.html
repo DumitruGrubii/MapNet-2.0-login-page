@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Login MapNet</title>
 
@@ -24,83 +24,62 @@
 
 <body>
 	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img id="logo" class="img-responsive centre" src="img/Map-Net-logo_only_cross.png" width="200px" height="200px" title="Mapnet 2.0 for Acantho"/>
+			</div>
+		</div>
 
-
-	<div class="row">
-		<div class="col-md-12 col-sm-10 col-xs-12" >
-			<img id="logo" class="centre" src="img/Map-Net-logo_only_cross.png" width="200px" height="200px" title="Mapnet 2.0 for Acantho"/>
-	  </div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-6 col-sm-10 col-xs-12">
-			<div class="login-page">
-			  <div class="form center">
-			    <form class="login-form">
-						<form action="{{ url_for_security('login') }}" method="POST" name="login_user_form">
-						<input type="text" placeholder="email"/>
-						<input type="password" placeholder="password"/>
-						<button type="submit"><strong>login</strong></button>
-						<label class="checkbox">
-	            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-	          </label>
+		<div class="row">
+			<div class="col-md-12 col-sm-10 col-xs-12">
+				<div class="login-page">
+				  <div class="form center">
+				    <form class="login-form">
+							<form action="{{ url_for_security('login') }}" method="POST" name="login_user_form">
+							<input type="text" placeholder="email"/>
+							<input type="password" placeholder="password"/>
+							<button type="submit"><strong>login</strong></button>
+							<label class="checkbox">
+		            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">Remember me</input>
+		          </label>
+						</form>
 					</form>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
+	</div>
+	</div>
 
-  <!--- Footer --->
-
-
-    <section style="height:80px;"></section>
+	  <!--- Footer --->
 
 
-    <footer class="footer-bs">
-        <div class="row">
-        	<div class="col-md-3 footer-brand animated fadeInLeft">
-            	<h2>Logo</h2>
-                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                <p>© 2014 BS3 UI Kit, All rights reserved</p>
-            </div>
-        	<div class="col-md-4 footer-nav animated fadeInUp">
-            	<h4>Menu —</h4>
-            	<div class="col-md-6">
-                    <ul class="pages">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Nature</a></li>
-                        <li><a href="#">Explores</a></li>
-                        <li><a href="#">Science</a></li>
-                        <li><a href="#">Advice</a></li>
-                    </ul>
-                </div>
-            	<div class="col-md-6">
-                    <ul class="list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        	<div class="col-md-2 footer-social animated fadeInDown">
-            	<h4>Follow Us</h4>
-            	<ul>
-                	<li><a href="#">Facebook</a></li>
-                	<li><a href="#">Twitter</a></li>
-                	<li><a href="#">Instagram</a></li>
-                	<li><a href="#">RSS</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-		<p>MapNet 2.0 - powered by Tecnograph - <a href="http://www.tecnograph-group.com/" class="mapnet-link">www.tecnograph-group.com</a> - <a href="mailto:info@tecnograph-group.com?subject=Richiesta Info su Map.NET 2.0" class="mapnet-link">info@tecnograph-group.com</a></p>
+	    <section style="height:80px;"></section>
 
 
-
-
-
-</body>
-</html>
+	    <footer class="footer-bs">
+	        <div class="row">
+	        	<div class="col-md-3 footer-brand animated fadeInLeft">
+	            	<h2 id="MapNet">MapNet 2.0</h2>
+	                <p>© 2016 TecnoGraph, All rights reserved</p>
+	            </div>
+	        	<div class="col-md-6 footer-nav animated fadeInUp">
+	            	<h4>Contatti</h4>
+	            	<div class="col-md-7">
+	                    <ul class="pages">
+	                        <li><a href="http://www.tecnograph-group.com/" class="mapnet-link">Tecnograph</a></li>
+													<li><a href="mailto:info@tecnograph-group.com?subject=Richiesta Info su Map.NET 2.0" class="mapnet-link">info@tecnograph-group.com</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        	<div class="col-md-2 footer-social animated fadeInDown">
+	            	<h4>Follow Us</h4>
+	            	<ul>
+	                	<li><a href="#">Facebook</a></li>
+	                	<li><a href="#">Twitter</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </footer>
+	</body>
+	</html>
