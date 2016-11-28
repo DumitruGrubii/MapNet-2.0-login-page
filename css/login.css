@@ -11,3 +11,5 @@ div.card {
   background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, red , yellow); /* Standard syntax */
 }
+
+font-family: 'Roboto Slab', serif;
