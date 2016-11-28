@@ -4,18 +4,21 @@ div.card {
     margin: auto;
 }
 
+img {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 
 font-family: 'Roboto Slab', serif;
 
-#logo {
-  margin-top: 100px;
-  float: none;
-}
 
 
 .login-page {
   width: auto;
-  padding: 20% 0 0;
+  padding: 10% 0 0;
   margin: auto;
 }
 .form {
@@ -76,7 +79,7 @@ font-family: 'Roboto Slab', serif;
 .container {
   position: relative;
   z-index: 1;
-  max-width: 400px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .container:before, .container:after {
@@ -126,11 +129,10 @@ body {
   background-color: #3c3d41;
 	padding: 60px 40px;
 	color: rgba(255,255,255,1.00);
-	margin-bottom: 20px;
 	border-bottom-right-radius: 6px;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 6px;
-  padding-bottom: 200px;
+  margin-top: 80px;
 }
 .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
 .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
@@ -178,4 +180,8 @@ body {
 #MapNet {
   font-family: Roboto Slab;
   font-weight: 600;
+}
+
+.col-md-7 {
+  padding-left: 0;
 }
