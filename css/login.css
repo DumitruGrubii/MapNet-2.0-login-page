@@ -4,12 +4,25 @@ div.card {
     margin: auto;
 }
 
-#grad {
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+body {
+  /* fallback */
+  background-color: #64b3f4;
+  background-repeat: repeat-y;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(-60deg, left top, right top, from(#64b3f4), to(#2F2727));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(-60deg, #64b3f4, #c2e59c);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(-60deg, #64b3f4, #c2e59c);
+  /* IE 10 */
+  background: -ms-linear-gradient(-60deg, #64b3f4, #c2e59c);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(-60deg, #64b3f4, #c2e59c);
 }
 
 font-family: 'Roboto Slab', serif;
+
+#logo {
+  margin-top: 100px;
+}
